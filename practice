@@ -108,3 +108,38 @@ if arms==i:
     print(arms,"is a armstrong number")
 else:
     print(arms,"is not a armstrong number")
+
+
+7.Armstrong number in a range (100-200)
+                            SOLUTION=1
+for i in range(100,200):
+    num=i
+    arms=0
+    m=len(str(i))
+    while i>0:
+        rem=i%10
+        arms=rem**m+arms
+        i=i//10
+    if arms==num:
+        print(arms,"is the armstrong")
+    else:
+        print(arms,"is not a armstrong")
+
+8.power of a number
+                            SOLUTION=1
+num = 5
+power = 3
+result = num ** power
+print(result)
+
+9.factorial of a number:
+                            SOLUTION=1
+nums=int(input("enter no:"))
+fac=1
+if nums==0:
+    fac=1
+else:
+    while nums>0:
+        fac=nums*fac
+        nums=nums-1
+print(fac)
