@@ -1,0 +1,55 @@
+1.sum of number -> 1+4+3 ->8
+                           SOLUTION=1
+num=143
+sum=0
+for i in range(num):
+    rem=num%10
+    pro=pro+rem
+    num=num//10
+print(sum)
+                           SOLUTION=2
+num=int(input("enter no:"))
+sum=0
+while num>0:
+    rem=num%10
+    sum+=rem
+    num//=10
+print(sum)
+                           SOLUTION 3
+num=int(input("enter no:"))
+sum=0
+for i in range(len(str(num))):
+    rem=num%10
+    sum+=rem
+    num//=10
+print(sum)
+
+2.product of number -> 1*4*3 ->12
+                           SOLUTION=1 #taking input from the user
+num=int(input("enter no:"))
+pro=1
+for i in range(len(str(num))):
+    rem=num%10
+    pro*=rem
+    num//=10
+print(pro)
+                           SOLUTION=2  #for numbers 1 to 100
+for i in range(1,101):
+    num=i
+    product=1
+    while num>0:
+        rem=num%10
+        product*=rem
+        num//=10
+    print(product)
+    
+3.reverse of number
+                           SOLUTION=1
+for i in range(1,101):
+    rev=0
+    num=i
+    while num>0:
+        rem=num%10
+        rev=rem+rev*10
+        num=num//10
+    print(rev)                           
